@@ -1,0 +1,14 @@
+1.tomcat5：${eclipse_home}/dropins/tomcat_3.2.1/DevLoader.zip 解压到${tomcat_home}/common/classes
+  tomcat6：${eclipse_home}/dropins/tomcat_3.2.1/DevLoader.zip 解压到${tomcat_home}/lib/
+
+2.项目上 alt+enter
+3.Tomcat 
+	1)General:
+		(1) 选中 Is a Tomcat Porject
+		(2) Context name:/${proejct.name}
+		(3) Subdirectory to set as web application root (optional):/src/main/webapp
+	2)DevLoader Classpath:
+		(1) 选中 Activate DevLoader
+		(2) 选中需要的 /${proejct.name}/target/classes
+		(3) 选中需要的 jar
+4.启动Tomcat插件(不能热部署)
